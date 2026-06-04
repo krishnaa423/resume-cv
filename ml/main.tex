@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.62in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\pagenumbering{gobble}
+\setlist[itemize]{leftmargin=*,nosep}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\begin{document}
+\begin{center}
+{\LARGE Srikrishnaa Vadivel}\\
+Machine Learning Engineer \textbar{} Scientific ML \textbar{} Equivariant Models\\
+\href{mailto:srikrishnaa@example.com}{srikrishnaa@example.com}
+\end{center}
+\section{Summary}
+PhD researcher applying machine learning to first-principles materials and
+molecular systems. Experience spans PyTorch, equivariant graph networks,
+diffusion models, distributed training concepts, HPC data pipelines, and
+physics-based loss design.
+\section{ML Experience}
+\textbf{Yale University, PhD Researcher} \hfill 2021--present
+\begin{itemize}
+\item Developed first-principles datasets and workflows for self-trapped
+exciton calculations on leadership-class HPC resources.
+\item Prototyped EGNN-style force models with energy gradients
+$F_{ai}=-\partial E/\partial R_{ai}$ and molecular graph construction.
+\item Built diffusion-model notes and code scaffolds covering DDPM training,
+conditional inference, transformers, and index-notation derivations.
+\end{itemize}
+\textbf{Probe Technologies / Weatherford} \hfill 2019--2021
+\begin{itemize}
+\item Built GPU-accelerated processing and visualization for large acoustic
+waveform data streams using CUDA and OpenGL.
+\item Engineered production data tooling around ASP services and Microsoft
+database systems.
+\end{itemize}
+\section{Selected Projects}
+\begin{itemize}
+\item \textbf{EGNN QM9 Force Model}: PyTorch message-passing model, force loss,
+synthetic graph fallback, and training-curve generation.
+\item \textbf{Diffusion Notes}: DDPM equations with $\alpha_t$, $\beta_t$,
+conditional training, and inference in index notation.
+\item \textbf{LiF Band Scaffold}: reciprocal-space Hamiltonian assembly and
+eigenvalue plotting for physics-informed ML context.
+\end{itemize}
+\section{Education}
+Yale University, PhD Electrical Engineering, 2021--present\\
+Cornell University, MEng ECE, 2017--2018\\
+Cornell University, BA ECE, 2013--2017
+\section{Skills}
+PyTorch, NumPy, SciPy, pandas, scikit-learn, Hugging Face Transformers,
+Accelerate, datasets, CUDA, MPI, OpenMP, Linux, Python, C++, Docker,
+Kubernetes, PETSc, SLEPc.
+\end{document}
