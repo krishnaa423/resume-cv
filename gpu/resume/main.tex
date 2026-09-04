@@ -17,19 +17,28 @@
 \makecvtitle
 
 \section{Summary}
-\cvitem{}{GPU-focused computational scientist and software engineer building accelerator-enabled applications in Python and C++ for large-scale simulation and data-processing workloads. Experience spans CUDA, ROCm, MPI, OpenMP, national-lab supercomputing systems, and machine-learning models that accelerate scientific computing pipelines.}
+\cvitem{}{GPU-focused computational scientist and software engineer targeting performance-oriented systems and HPC infrastructure roles. Builds accelerator-enabled applications in Python and C++ with CUDA, ROCm, MPI, and OpenMP, with experience in multi-GPU parallelization, collective communication, distributed debugging, and strong and weak scaling analysis on national-lab supercomputers.}
+
+\section{Technical Skills}
+\cvitem{Programming}{Python, C, C++, CUDA, JavaScript, Bash, SQL, C\#}
+\cvitem{GPU / HPC}{CUDA, ROCm, MPI, OpenMP, collective communication, multi-GPU parallelization, PETSc, SLEPc}
+\cvitem{Platforms}{AMD MI250X, NVIDIA A100, Frontier, Perlmutter, Linux, CMake, Docker, Kubernetes}
+\cvitem{Debug / Perf}{TotalView, Linaro DDT, distributed debugging, strong scaling, weak scaling, hardware-aware optimization}
+\cvitem{Machine Learning}{PyTorch, PyTorch Geometric, automatic differentiation, equivariant graph neural networks, scikit-learn}
 
 \section{Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Developed distributed scientific software in Python and C++ for first-principles simulation workloads as part of an INCITE award using exascale resources, with MPI, OpenMP, CUDA, ROCm, PETSc, and SLEPc on Frontier at OLCF, Perlmutter at LBNL, and related national-lab clusters.
-\item Ported and optimized scientific-computing workloads for accelerator-enabled HPC environments, translating many-body and excited-state physics methods into scalable GPU-backed implementations.
-\item Built PyTorch and PyTorch Geometric models, including equivariant graph neural networks, to accelerate self-trapped-exciton calculations and related materials simulations.
-\item Packaged scientific software in Docker containers and used tools such as TotalView and Linaro DDT to debug distributed applications across heterogeneous compute environments.
+\item Developed distributed scientific software in Python and C++ for first-principles simulation workloads as part of an INCITE award using exascale resources, with MPI, OpenMP, CUDA, ROCm, PETSc, and SLEPc on Frontier at OLCF and Perlmutter at LBNL.
+\item Parallelized matrix and vector workloads across multiple GPUs, using collective communication and distributed linear-algebra workflows to scale simulations across accelerator-backed clusters.
+\item Ported and optimized scientific-computing workloads for AMD MI250X and NVIDIA A100 GPU systems, translating many-body and excited-state physics methods into scalable accelerator-backed implementations.
+\item Built PyTorch and PyTorch Geometric models, including equivariant graph neural networks, that delivered roughly 100x speedups for parts of the workflow by combining model training with automatic differentiation to obtain additional quantities without separate expensive calculations.
+\item Ran strong- and weak-scaling studies to evaluate distributed performance and used TotalView, CUDA-aware MPI workflows, and Linaro DDT to debug multi-process and multi-GPU applications across heterogeneous compute environments.
+\item Packaged scientific software in Docker containers for reproducible deployment across local and HPC systems.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS research in 2024, 2025, and 2026, grounding GPU and HPC work in production research workflows.
 \end{itemize}}
 \cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
 \item Developed CUDA-based software for high-volume acoustic waveform processing, visualization, and field-tool diagnostics in geological well logging systems.
-\item Built full-stack server applications with C\#, ASP.NET, and Microsoft SQL Server for database design, real-time remote tool testing, and calibration of temperature and pressure sensors.
+\item Built engineering software and supporting backend tooling for real-time remote tool testing, data collection, and sensor calibration workflows.
 \item Applied finite-element analysis with dolfinx for frequency analysis of steel pipes in well environments to support physics-driven engineering studies.
 \end{itemize}}
 \cventry{2018--2019}{Photonics Technical Writer}{FindLight}{}{}{\begin{itemize}%
@@ -37,8 +46,8 @@
 \end{itemize}}
 
 \section{Selected Projects}
-\cvitem{Accelerator-Enabled Exciton-Phonon Simulation}{Developed distributed first-principles calculations for excited-state and exciton-phonon problems with CUDA, ROCm, MPI, and OpenMP on leadership-class GPU clusters.}
-\cvitem{Scientific ML on GPU Systems}{Developed PyTorch Geometric equivariant models to accelerate molecular and excitonic calculations in GPU-backed scientific workflows.}
+\cvitem{Accelerator-Enabled Exciton-Phonon Simulation}{Developed distributed first-principles calculations with CUDA, ROCm, MPI, and OpenMP, including multi-GPU matrix and vector parallelization on leadership-class GPU clusters.}
+\cvitem{Scientific ML on GPU Systems}{Developed PyTorch Geometric equivariant models that produced roughly 100x workflow speedups by pairing training with automatic differentiation to recover additional quantities efficiently.}
 \cvitem{CUDA Containers for HPC Software}{Packaged scientific applications in CUDA-ready Docker environments for portable deployment across local and HPC systems.}
 \cvitem{Matrix-Multiply AI Accelerator}{Built a Verilog-based matrix-multiply accelerator project for AI-oriented datapath design and hardware-aware compute fundamentals.}
 
@@ -48,12 +57,5 @@
 \cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
 \cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
 \cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{}
-
-\section{Technical Skills}
-\cvitem{Programming}{Python, C, C++, CUDA, JavaScript, Bash, SQL, C\#}
-\cvitem{GPU / HPC}{CUDA, ROCm, MPI, OpenMP, PETSc, SLEPc, TotalView, Linaro DDT, Frontier, Perlmutter}
-\cvitem{Machine Learning}{PyTorch, PyTorch Geometric, scikit-learn, equivariant graph neural networks}
-\cvitem{Systems}{Linux, macOS, Windows, Docker, Docker Compose, Kubernetes, gcloud, CMake}
-\cvitem{Domains}{GPU computing, high-performance computing, first-principles materials modeling, many-body theory, scientific software}
 
 \end{document}
