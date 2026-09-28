@@ -1,0 +1,40 @@
+\section{Summary}
+Computational-physics PhD researcher who turns many-body and first-principles models into scalable scientific software. Combines Python/C++, MPI/OpenMP, CUDA/ROCm, PETSc/SLEPc, and scientific ML for materials calculations on leadership-class GPU systems.
+
+\section{Technical Skills}
+\SkillLine{Scientific computing}{Python, C++, MPI, OpenMP, PETSc, SLEPc, mpi4py, petsc4py, slepc4py, DOLFINx, NumPy, SciPy, SymPy}
+\SkillLine{GPU and HPC}{CUDA (cuBLAS, cuTENSOR), ROCm (rocBLAS, rocFFT), CUDA-aware MPI, collective communication, strong/weak scaling, CMake, TotalView, Linaro DDT; Frontier (AMD MI250X), Perlmutter (NVIDIA A100), Frontera}
+\SkillLine{ML and systems}{PyTorch, PyTorch Geometric, JAX, equivariant GNNs, automatic differentiation, Docker, Kubernetes, Linux}
+
+\section{Experience}
+\Role{PhD Researcher}{Yale University}{Electrical Engineering}{2021--present}
+\begin{itemize}
+\item Formulate and implement first-principles many-body models of self-trapped excitons and exciton-polarons in LiF and lead-free double perovskites.
+\item Maintain distributed Python/C++ simulation workflows using MPI, OpenMP, PETSc, and SLEPc for INCITE-supported workloads on Frontier and Perlmutter.
+\item Port multi-GPU numerical workloads across CUDA and ROCm; use scaling studies, collective communication, and TotalView/Linaro DDT to isolate distributed failures.
+\item Construct DeePH-style computational graphs and train equivariant graph neural networks with PyTorch Geometric and automatic differentiation to accelerate optical-property calculations; parts of the workflow achieved roughly 100x speedup by avoiding separate expensive derivative calculations.
+\item Co-author a 2025 \textit{Journal of the American Chemical Society} paper and present related first-principles research at APS meetings.
+\end{itemize}
+\Role{Software and Embedded Systems Engineer}{Probe Technologies / Weatherford Wireline Services}{Houston, TX}{2019--2021}
+\begin{itemize}
+\item Implemented CUDA/OpenCL waveform-processing and OpenGL visualization tools for acoustic well-logging diagnostics.
+\item Delivered C\# and ASP.NET services backed by Microsoft SQL Server for remote tool testing, sensor calibration, and engineering data management.
+\end{itemize}
+
+\section{Selected Projects}
+\Project{Finite-element simulation portfolio}{Implemented transient heat, Poisson, and incompressible-flow cases in DOLFINx/PETSc, with PyVista and Matplotlib post-processing.}
+\Project{EGNN force model}{Trained an equivariant molecular model on QM9 using PyTorch Geometric/e3nn; differentiated predicted energies to obtain forces.}
+\Project{H2 VQE benchmark}{Built a reproducible PySCF-to-Qiskit workflow with Jordan--Wigner mapping, UCCSD VQE, and exact-diagonalization reference curves.}
+
+\section{Education}
+\Role{PhD, Electrical Engineering}{Yale University}{Computational materials, scientific computing, and ML}{2021--present}
+\Role{MPhil and MS, Electrical Engineering}{Yale University}{}{2023}
+\Role{MEng and BS, Electrical and Computer Engineering}{Cornell University}{}{2013--2018}
+
+\ifcv
+\section{Selected Publications and Presentations}
+\textbf{Journal article:} de Paula et al., including S. Vadivel, ``Time-domain observation of ultrafast self-trapped exciton formation in lead-free double halide perovskites,'' \textit{JACS}, 2025.\\
+\textbf{APS presentations:} First-principles studies of self-trapped excitons and exciton-polarons, 2024--2026.\\
+\section{Additional Technical Work}
+\Project{Containerized scientific software}{Packaged CUDA-ready and cross-environment first-principles stacks with Docker and published reusable images to Docker Hub.}
+\fi

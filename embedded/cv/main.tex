@@ -1,74 +1,8 @@
-\documentclass[10pt,letterpaper,sans]{moderncv}
-\moderncvstyle{banking}
-\moderncvcolor{blue}
-
-\usepackage[scale=0.84]{geometry}
-\nopagenumbers{}
-\setlength{\hintscolumnwidth}{2.35cm}
-
-\name{Krishnaa}{Vadivel}
-\title{Embedded Systems Engineer | Firmware | FPGA | Robotics}
-\email{srikrishnaa.careers@gmail.com}
-\phone[mobile]{516-853-5663}
-\social[linkedin]{sri-krishnaa-ece-phd}
-\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
-
+\documentclass[10pt,letterpaper]{article}
+\input{../../shared/style.tex}
+\newif\ifcv
+\cvtrue
 \begin{document}
-\makecvtitle
-
-\section{Profile}
-\cvitem{}{Embedded systems engineer with experience spanning firmware development, FPGA logic, robotics, instrumentation, and field validation. Background includes low-level development for sensing and logging platforms, board bring-up and debugging, and companion software for analysis and visualization around embedded hardware.}
-
-\section{Professional Experience}
-\cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
-\item Developed embedded functionality for geological well tools using Lattice FPGA, PIC32, dsPIC, STM32, and C8051-class hardware platforms.
-\item Implemented sensor-logging and control-side logic and firmware for field-deployed systems operating in instrumentation-heavy environments.
-\item Performed oscilloscope-based debugging, bench validation, and field testing to verify hardware-software integration and system behavior.
-\item Supported selective PCB updates in Altium and related board-level engineering tasks as system requirements evolved.
-\item Built companion host-side engineering tools using CUDA for waveform processing, visualization, and diagnostic workflows around the embedded stack.
-\item Contributed additional internal software using C\#, ASP-style services, and Microsoft SQL-backed data workflows.
-\end{itemize}}
-\cventry{2021--present}{Embedded Systems Teaching Assistant / PhD Researcher}{Yale University}{}{}{\begin{itemize}%
-\item Supported embedded systems laboratories and student projects involving firmware, hardware interfaces, debugging practices, and instrumentation workflows.
-\item Continued broader engineering work in scientific computing and simulation while maintaining strong embedded-systems fluency.
-\item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS talks in 2024, 2025, and 2026 on excited-state materials physics.
-\end{itemize}}
-
-\section{Selected Projects}
-\cventry{}{EMG-Driven Robotic Hand}{}{}{}{\begin{itemize}%
-\item Built an embedded robotic-hand project in undergraduate Cornell ECE work, integrating surface EMG sensing, analog filtering, PIC32 control logic, and servo actuation; related work was published in Circuit Cellar.
-\end{itemize}}
-\cventry{}{Maze Mapping Robot with Wireless Control}{}{}{}{\begin{itemize}%
-\item Worked on a robotics project combining navigation logic, remote-station control, and wireless coordination in a course setting.
-\end{itemize}}
-\cventry{}{Single-Cycle MIPS Processor}{}{}{}{\begin{itemize}%
-\item Implemented a small Verilog CPU and self-checking test bench to demonstrate digital design, datapath organization, and reproducible verification.
-\end{itemize}}
-\cventry{}{Matrix-Multiply Accelerator}{}{}{}{\begin{itemize}%
-\item Built a compact Verilog accelerator block with clear start/done control behavior and a simulation-backed test flow.
-\end{itemize}}
-\cventry{}{Host-Side Diagnostic and Visualization Tooling}{}{}{}{\begin{itemize}%
-\item Developed CUDA-based utilities for analyzing and visualizing waveform data associated with embedded sensing and logging systems.
-\end{itemize}}
-
-\section{Education}
-\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{Ongoing doctoral work; also served as an embedded systems teaching assistant.}
-\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
-\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
-\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{Included advanced engineering coursework and embedded-adjacent systems work.}
-\cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{Included embedded systems, robotics, and hardware-software integration foundations.}
-
-\section{Selected Coursework}
-\cvitem{Embedded}{Advanced Embedded Systems; laboratory-oriented firmware and systems work}
-\cvitem{Signals and Systems}{Mathematics of Signals and Systems}
-\cvitem{Hardware}{VLSI Design; Analog VLSI Design; digital and mixed engineering foundations}
-\cvitem{Supporting Theory}{Semiconductor Physics; controls/robotics-adjacent systems exposure in ECE training}
-
-\section{Technical Skills}
-\cvitem{Languages}{C, C++, Python, Bash, JavaScript}
-\cvitem{Hardware}{Verilog, FPGA, PIC32, dsPIC, STM32, C8051, sensor logging, embedded control}
-\cvitem{Interfaces}{SPI, I2C, UART, hardware-software integration workflows}
-\cvitem{Validation}{Oscilloscopes, bench instrumentation, field testing, board bring-up, Altium update support}
-\cvitem{Software}{Linux, CUDA, C\#, ASP.NET, Microsoft SQL Server}
-
+\ResumeHeader{Embedded Systems Engineer | Firmware and FPGA}
+\input{../../shared/embedded.tex}
 \end{document}

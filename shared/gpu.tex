@@ -1,0 +1,33 @@
+\section{Summary}
+GPU and scientific-software engineer with research and industry experience in distributed numerical computing, CUDA/ROCm portability, scientific ML, and performance debugging on NVIDIA and AMD systems.
+\section{Technical Skills}
+\SkillLine{GPU/HPC}{CUDA (cuBLAS, cuTENSOR), ROCm (rocBLAS, rocFFT), CUDA-aware MPI, MPI, OpenMP, PETSc, SLEPc, CMake, strong/weak scaling, TotalView, Linaro DDT}
+\SkillLine{Platforms}{Frontier (AMD MI250X), Perlmutter (NVIDIA A100), Frontera, Linux, Docker, Kubernetes}
+\SkillLine{Languages/ML}{Python, C++, C, JAX, PyTorch, PyTorch Geometric, equivariant GNNs, automatic differentiation}
+\section{Experience}
+\Role{PhD Researcher}{Yale University}{Electrical Engineering}{2021--present}
+\begin{itemize}
+\item Engineer distributed first-principles simulation workflows in Python/C++ using MPI, OpenMP, PETSc, and SLEPc for national-lab GPU clusters.
+\item Port and debug multi-GPU matrix/vector workloads across CUDA and ROCm, using collective communication, scaling runs, TotalView, and Linaro DDT.
+\item Build DeePH-style computational graphs and train PyTorch Geometric equivariant models for LiF and double-perovskite calculations; automatic differentiation removed separate derivative calculations and delivered roughly 100x speedup in portions of the workflow.
+\end{itemize}
+\Role{Software and Embedded Systems Engineer}{Probe Technologies / Weatherford Wireline Services}{Houston, TX}{2019--2021}
+\begin{itemize}
+\item Implemented CUDA/OpenCL pipelines and OpenGL tooling for high-volume acoustic-waveform processing, visualization, and field diagnostics.
+\item Built C\#/ASP.NET/SQL Server systems for remote-tool testing and calibration data workflows.
+\end{itemize}
+\section{Selected Projects}
+\Project{Portable first-principles stack}{Containerized CUDA-ready scientific software for reproducible deployment across HPC environments.}
+\Project{EGNN force prediction}{Used PyTorch Geometric/e3nn to predict energies and obtain forces through automatic differentiation.}
+\Project{DOLFINx/PETSc simulations}{Implemented PDE workflows for heat, electrostatics, and incompressible flow with explicit solver configurations.}
+\section{Education}
+\Role{PhD, Electrical Engineering}{Yale University}{Scientific computing and computational materials}{2021--present}
+\Role{MPhil and MS, Electrical Engineering}{Yale University}{}{2023}
+\Role{MEng and BS, Electrical and Computer Engineering}{Cornell University}{}{2013--2018}
+\ifcv
+\section{Research Record}
+\textbf{Publication:} Co-author, \textit{Journal of the American Chemical Society}, 2025.\\
+\textbf{Presentations:} APS research presentations, 2024--2026, on first-principles excited-state physics.\\
+\section{Library Detail}
+\SkillLine{Numerical stack}{PETSc, SLEPc, DOLFINx, mpi4py, petsc4py, slepc4py, NumPy, SciPy, PyVista}
+\fi

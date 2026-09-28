@@ -1,72 +1,8 @@
-\documentclass[10pt,letterpaper,sans]{moderncv}
-\moderncvstyle{banking}
-\moderncvcolor{blue}
-
-\usepackage[scale=0.84]{geometry}
-\nopagenumbers{}
-\setlength{\hintscolumnwidth}{2.35cm}
-
-\name{Krishnaa}{Vadivel}
-\title{Machine Learning Engineer | High-Performance Computing}
-\email{srikrishnaa.careers@gmail.com}
-\phone[mobile]{516-853-5663}
-\social[linkedin]{sri-krishnaa-ece-phd}
-\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
-
+\documentclass[10pt,letterpaper]{article}
+\input{../../shared/style.tex}
+\newif\ifcv
+\cvtrue
 \begin{document}
-\makecvtitle
-
-\section{Profile}
-\cvitem{}{PhD researcher and engineer building machine-learning models and running them on high-performance computing systems for large-scale materials simulation. Combines model development, GPU-aware implementation, distributed compute, and scientific domain knowledge across materials, optics, and agentic ML tooling.}
-
-\section{Research Experience}
-\cventry{2021--present}{Research Assistant / PhD Researcher}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Developed equivariant graph neural networks in PyTorch and PyTorch Geometric, similar to DeepH and MACE, to accelerate optical-properties calculations and material-energy prediction with automatic differentiation.
-\item Built distributed compute and data-processing software in Python and C++ using MPI, OpenMP, CUDA, ROCm, PETSc, and SLEPc across national HPC environments including Frontier, Frontera, and Perlmutter.
-\item Connected ML methods to domain theory through first-principles exciton calculations, many-body modeling, and numerical simulation, enabling realistic ML problem framing for materials systems.
-\item Used agentic ML and retrieval-driven tooling to generate first-principles software inputs from journal articles and technical documentation.
-\item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and delivered APS presentations in 2024, 2025, and 2026 on self-trapped exciton formation and related excited-state problems.
-\end{itemize}}
-
-\section{Professional Experience}
-\cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
-\item Built CUDA-accelerated data-processing and visualization software for large waveform datasets, strengthening experience in GPU-enabled high-throughput pipelines.
-\item Built database- and web-backed data-management systems with ASP-style services and Microsoft SQL for collecting, organizing, and processing large-scale well-tool datasets.
-\item Worked close to embedded and instrumentation contexts, improving practical understanding of data generation, system integration, and performance constraints.
-\end{itemize}}
-
-\section{Selected Projects}
-\cventry{}{Materials ML for Optical Properties}{}{}{}{\begin{itemize}%
-\item Developed equivariant graph neural networks in PyTorch and torch\_geometric to accelerate optical-properties calculations and material-energy prediction in materials systems.
-\end{itemize}}
-\cventry{}{Matrix-Multiply AI Accelerator}{}{}{}{\begin{itemize}%
-\item Built a Verilog-based matrix-multiply accelerator project to demonstrate hardware-aware AI compute and datapath design fundamentals.
-\end{itemize}}
-\cventry{}{Agentic RAG for Scientific Workflows}{}{}{}{\begin{itemize}%
-\item Built retrieval-driven tooling that reads software documentation and academic papers to generate structured starter inputs for computational science and quantum-chemistry-style tasks.
-\end{itemize}}
-\cventry{}{Container Orchestration for First-Principles Computing}{}{}{}{\begin{itemize}%
-\item Developed CUDA-ready and cross-environment containers for first-principles software stacks and published them to Docker Hub for portable scientific computing.
-\end{itemize}}
-
-\section{Education}
-\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{Ongoing work spanning scientific computing, first-principles materials simulation, and ML-assisted acceleration.}
-\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
-\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
-\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
-\cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{}
-
-\section{Selected Coursework}
-\cvitem{Machine Learning}{Probabilistic Machine Learning}
-\cvitem{Theory}{Theoretical Computer Science; strong mathematical/theory preparation supporting modern ML work}
-\cvitem{Scientific Foundations}{Graduate Quantum Mechanics; Solid State Physics; Many-Body Quantum Physics}
-\cvitem{Engineering Foundations}{Signals and systems, embedded systems, and numerical/scientific computing practice}
-
-\section{Technical Skills}
-\cvitem{ML}{PyTorch, PyTorch Geometric, scikit-learn, equivariant graph neural networks, transformers, automatic differentiation}
-\cvitem{Languages}{Python, C++, CUDA, JavaScript, Bash, PowerShell}
-\cvitem{Scientific Python}{NumPy, pandas, SciPy, SymPy, matplotlib}
-\cvitem{Compute}{MPI, OpenMP, CUDA, ROCm, PETSc, SLEPc, mpi4py, petsc4py, slepc4py}
-\cvitem{Platforms}{Linux, Docker, Docker Compose, Kubernetes, gcloud, Frontier, Frontera, Perlmutter}
-
+\ResumeHeader{Scientific Machine Learning | Computational Materials}
+\input{../../shared/ml.tex}
 \end{document}
