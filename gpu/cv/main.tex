@@ -8,33 +8,33 @@
 \setlength{\hintscolumnwidth}{2.35cm}
 
 \name{Krishnaa}{Vadivel}
-\title{GPU Software Engineer | HPC}
+\title{GPU Software | CUDA/ROCm | HPC}
 \email{srikrishnaa.careers@gmail.com}
 \phone[mobile]{516-853-5663}
 \social[linkedin]{sri-krishnaa-ece-phd}
-\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+\extrainfo{Portfolio: \href{https://krishnaa423.github.io/personal-website/}{\texttt{krishnaa423.github.io/personal-website}}}
 
 \begin{document}
 \makecvtitle
 
 \section{Profile}
-\cvitem{}{GPU-focused computational scientist and PhD researcher for performance-oriented systems and HPC roles. Develops Python and C++ code with CUDA, ROCm, MPI, and OpenMP, with experience in collective communication, multi-GPU parallelization, distributed debugging, and scaling analysis on national-lab HPC platforms.}
+\cvitem{}{GPU-focused computational scientist and PhD researcher for performance-oriented systems and HPC roles. Develops Python and C++ code with CUDA, ROCm/HIP, MPI, and OpenMP, and sharded JAX/PyTorch computational graphs across up to 800 Frontier GPUs and TB-scale datasets.}
 
 \section{Technical Skills}
-\cvitem{Languages}{Python, C, C++, CUDA, JavaScript, Bash, PowerShell, SQL}
-\cvitem{GPU / HPC}{CUDA, ROCm, cuBLAS, cuTENSOR, rocBLAS, rocFFT, MPI, OpenMP, PETSc, SLEPc, mpi4py, petsc4py, slepc4py, collective communication}
+\cvitem{Languages}{Python, C, C++, CUDA, HIP, JAX, PyTorch, Bash, PowerShell}
+\cvitem{GPU / HPC}{CUDA, ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, MPI, OpenMP, PETSc, SLEPc, mpi4py, petsc4py, slepc4py, collective communication}
 \cvitem{Platforms}{AMD MI250X, NVIDIA A100, Frontier, Perlmutter, Linux command line, macOS, Windows, CMake}
-\cvitem{Debugging / Perf}{TotalView, Linaro DDT, CUDA-aware distributed debugging, strong scaling, weak scaling, hardware-aware optimization}
+\cvitem{Debugging / Perf}{cuda-gdb, nvprof, TotalView, Linaro DDT, CUDA-aware MPI/GPU distributed debugging, strong scaling, weak scaling, hardware-aware optimization}
 \cvitem{Machine Learning}{PyTorch, PyTorch Geometric, automatic differentiation, equivariant graph neural networks, scikit-learn}
 
 \section{Research Experience}
 \cventry{2021--present}{Research Assistant / PhD Researcher}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Implemented INCITE-supported distributed scientific software in Python/C++ with MPI, OpenMP, PETSc, and SLEPc for LiF and double-perovskite workloads on Frontier, Perlmutter, and related national-lab systems.
+\item Implemented INCITE-supported distributed scientific software in Python/C++ with MPI, OpenMP, PETSc, SLEPc, CUDA/ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, and rocFFT for LiF and double-perovskite exciton-polaron workloads on Frontier, Perlmutter, and related national-lab systems.
 \item Parallelized matrix and vector workloads across multiple GPUs, using collective communication and distributed linear-algebra workflows to scale simulations across clusters.
 \item Ported and optimized computational workloads for AMD MI250X and NVIDIA A100 GPU systems using CUDA and ROCm, translating many-body and excited-state physics methods into scalable GPU implementations.
 \item Developed many-body and field-theoretic formulations of coupled electron, exciton, and phonon systems, including coherent-state and path-integral approaches for time-dependent and self-localized states.
 \item Built DeePH-style computational graphs and PyTorch Geometric equivariant models to accelerate self-trapped-exciton calculations, achieving roughly 100x speedups in parts of the workflow through training and automatic differentiation.
-\item Ran strong- and weak-scaling studies and used TotalView, CUDA-aware MPI workflows, Linaro DDT, Bash, and Linux command-line tools to debug distributed applications across multi-process and multi-GPU environments.
+\item Sharded JAX/PyTorch computational graphs across up to 800 Frontier GPUs and TB-scale datasets; ran strong- and weak-scaling studies using cuda-gdb, nvprof, TotalView, CUDA-aware MPI workflows, Linaro DDT, Bash, and Linux command-line tools.
 \item Packaged scientific applications in Docker containers for deployment across different computing environments.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS talks in 2024, 2025, and 2026 on self-trapped exciton formation, exciton-polarons, and related excited-state materials physics.
 \end{itemize}}

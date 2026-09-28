@@ -8,24 +8,24 @@
 \setlength{\hintscolumnwidth}{2.25cm}
 
 \name{Krishnaa}{Vadivel}
-\title{Computational Physics | GPU/HPC}
+\title{Computational Physics | GPU/HPC | ML}
 \email{srikrishnaa.careers@gmail.com}
 \phone[mobile]{516-853-5663}
 \social[linkedin]{sri-krishnaa-ece-phd}
-\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+\extrainfo{Portfolio: \href{https://krishnaa423.github.io/personal-website/}{\texttt{krishnaa423.github.io/personal-website}}}
 
 \begin{document}
 \makecvtitle
 
 \section{Summary}
-\cvitem{}{Computational physics researcher building distributed scientific software and using machine learning to accelerate calculations for first-principles materials research. Experience spans Python/C++, CUDA/ROCm, MPI/OpenMP, Linux-based HPC environments, and Docker containers for packing applications across environments.}
+\cvitem{}{Computational physics researcher building distributed first-principles and scientific-ML workflows for materials research. Experience spans Python/C++, CUDA/ROCm/HIP, MPI/OpenMP, PETSc/SLEPc, JAX/PyTorch computational graphs, and leadership-class GPU clusters.}
 
 \section{Research Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Implemented INCITE-supported first-principles workflows in Python/C++ with MPI, OpenMP, CUDA/ROCm, PETSc, and SLEPc on Frontier at OLCF and Perlmutter at LBNL.
+\item Implemented INCITE-supported first-principles workflows in Python/C++ for LiF and double-perovskite exciton-polarons, using MPI, OpenMP, CUDA/ROCm/HIP, PETSc, and SLEPc on Frontier at OLCF and Perlmutter at LBNL.
 \item Formulated coherent-state and path-integral treatments of exciton-phonon dynamics for self-trapped excitons and exciton-polarons in LiF and lead-free double perovskites, connecting DFT, DFPT, and GW/BSE-style methods.
 \item Built DeePH-style computational graphs and trained PyTorch Geometric equivariant models with automatic differentiation to accelerate optical-property calculations.
-\item Packaged scientific applications in Docker containers for deployment across different computing environments and used distributed debuggers such as TotalView and Linaro DDT to track down bugs on HPC systems.
+\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale cluster datasets; used cuda-gdb, nvprof, TotalView, Linaro DDT, and CUDA-aware MPI workflows for distributed GPU debugging and performance analysis.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper on ultrafast self-trapped exciton formation in lead-free double halide perovskites and presented related APS research in 2024, 2025, and 2026.
 \end{itemize}}
 
@@ -53,11 +53,11 @@
 \cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{}
 
 \section{Technical Skills}
-\cvitem{Programming}{Python, C, C++, CUDA, JavaScript, Bash, SQL, C\#}
+\cvitem{Programming}{Python, C, C++, CUDA, HIP, JAX, PyTorch, Bash, C\#}
 \cvitem{Scientific Computing}{MPI, OpenMP, PETSc, SLEPc, NumPy, SciPy, SymPy, matplotlib, dolfinx}
-\cvitem{GPU Libraries}{CUDA, ROCm, cuBLAS, cuTENSOR, rocBLAS, rocFFT, CUDA-aware MPI}
+\cvitem{GPU Libraries}{CUDA, ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, CUDA-aware MPI}
 \cvitem{Machine Learning}{PyTorch, PyTorch Geometric, scikit-learn, equivariant graph neural networks}
-\cvitem{Platforms}{Linux, macOS, Windows, Docker, Docker Compose, Kubernetes, gcloud, Frontier, Perlmutter}
+\cvitem{Debug / Platforms}{cuda-gdb, nvprof, TotalView, Linaro DDT, Linux, Docker, Frontier, Perlmutter, TB-scale data workflows}
 \cvitem{Domains}{First-principles materials modeling, many-body theory, distributed computing, computational physics, numerical PDEs}
 
 \end{document}

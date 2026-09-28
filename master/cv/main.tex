@@ -8,11 +8,11 @@
 \setlength{\hintscolumnwidth}{2.35cm}
 
 \name{Krishnaa}{Vadivel}
-\title{Scientific Computing | Electrical Engineering}
+\title{Scientific Computing | GPU/HPC | EE}
 \email{srikrishnaa.careers@gmail.com}
 \phone[mobile]{516-853-5663}
 \social[linkedin]{sri-krishnaa-ece-phd}
-\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+\extrainfo{Portfolio: \href{https://krishnaa423.github.io/personal-website/}{\texttt{krishnaa423.github.io/personal-website}}}
 
 \begin{document}
 \makecvtitle
@@ -23,8 +23,8 @@
 \section{Research Experience}
 \cventry{2021--present}{Research Assistant / PhD Researcher}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
 \item Developed machine-learning and automatic-differentiation models in Python for material-property prediction and optical-emission calculations.
-\item Developed first-principles and quantum many-body simulation software in Python and C++ using MPI, OpenMP, PETSc, SLEPc, CUDA, ROCm, and CMake for large simulation and linear-algebra workloads.
-\item Built distributed and accelerator-enabled applications for Frontier, Perlmutter, Frontera, and related clusters, spanning both NVIDIA and AMD GPU systems.
+\item Developed first-principles and quantum many-body simulation software in Python and C++ using MPI, OpenMP, PETSc, SLEPc, CUDA/ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, and CMake for large simulation and linear-algebra workloads.
+\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale datasets, spanning NVIDIA and AMD GPU systems on Frontier, Perlmutter, Frontera, and related clusters.
 \item Worked on light-matter interaction and quantum many-body modeling, including self-trapped-exciton and exciton-polaron problems relevant to semiconductor and photonic materials.
 \item Helped fabricate and characterize semiconductor materials during the early PhD, alongside simulation and modeling work tied to photonic and electronic materials.
 \item Built agentic AI pipelines for reading papers and software documentation, then generating structured inputs for first-principles simulation workflows.
@@ -35,9 +35,9 @@
 \section{Professional Experience}
 \cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
 \item Built parallel applications with CUDA and OpenCL fallback for large acoustic waveform and sensor datasets used in engineering diagnostics and field-tool analysis.
-\item Developed embedded software and digital logic for sensing, logging, and control functions using Lattice FPGA, PIC32, dsPIC, STM32, and C8051-based systems.
+\item Developed Embedded C, FreeRTOS, and digital logic for sensing, logging, and control functions using Lattice FPGA, PIC32, dsPIC, ESP32, STM32, and C8051-based systems.
 \item Supported board- and system-level engineering tasks including oscilloscope-based debugging, integration testing, field validation, and selective PCB modifications in Altium.
-\item Developed full-stack server applications with ASP.NET and Microsoft SQL Server for real-time control of company tool testing, data collection, and data processing.
+\item Developed C\# and ASP.NET applications for real-time control of company tool testing, data collection, and data processing.
 \item Developed C\# GUI applications for preparing customer inputs and interacting with deployed hardware systems.
 \item Used \texttt{dolfinx}-based finite-element analysis for frequency analysis of steel pipes in wells.
 \end{itemize}}
@@ -93,11 +93,12 @@
 \cvitem{Electrical Engineering}{Semiconductor Physics; Thin Film Science; Lasers and Optoelectronics; Integrated Photonics; VLSI Design; Analog VLSI Design; Mathematics of Signals and Systems; Advanced Embedded Systems}
 
 \section{Technical Skills}
-\cvitem{Languages}{Python, C, C++, CUDA, JavaScript, Bash, PowerShell, C\#}
-\cvitem{Scientific Computing}{DOLFINx, PyVista, MPI, OpenMP, PETSc, SLEPc, mpi4py, petsc4py, slepc4py, NumPy, pandas, SciPy, SymPy, matplotlib}
+\cvitem{Languages}{Python, C, C++, CUDA, HIP, JAX, PyTorch, C\#, JavaScript, Bash, PowerShell}
+\cvitem{Scientific Computing}{DOLFINx, Meep FDTD, PyVista, MPI, OpenMP, PETSc, SLEPc, mpi4py, petsc4py, slepc4py}
 \cvitem{Machine Learning}{PyTorch, PyTorch Geometric, scikit-learn, graph neural networks, transformers, automatic differentiation, agentic AI}
-\cvitem{Hardware}{Verilog, Lattice FPGA, PIC32, dsPIC, STM32, C8051, sensor interfaces, PCB bring-up, oscilloscope debugging}
-\cvitem{Software / Systems}{ASP.NET, Microsoft SQL Server, Linux command line, Docker, Docker Compose, Kubernetes, LangChain, OpenAI API, Ollama, gcloud}
-\cvitem{HPC Platforms}{Frontier, Frontera, Perlmutter, and related national-lab or university HPC environments}
+\cvitem{GPU / Debug}{CUDA/ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, gdb, cuda-gdb, nvprof, TotalView, Linaro DDT}
+\cvitem{Hardware}{Embedded C, FreeRTOS, Verilog, Lattice FPGA, PIC32, dsPIC, ESP32, STM32, C8051, PCB bring-up, oscilloscope debugging}
+\cvitem{Software / Systems}{ASP.NET, Linux command line, Docker, Docker Compose, Kubernetes, LangChain, OpenAI API, Ollama, gcloud}
+\cvitem{HPC Platforms}{Up to 800 Frontier GPUs, TB-scale data, Frontera, Perlmutter, and related national-lab or university HPC environments}
 
 \end{document}

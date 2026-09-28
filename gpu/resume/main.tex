@@ -8,32 +8,32 @@
 \setlength{\hintscolumnwidth}{2.25cm}
 
 \name{Krishnaa}{Vadivel}
-\title{GPU Software Engineer | HPC}
+\title{GPU Software | CUDA/ROCm | HPC}
 \email{srikrishnaa.careers@gmail.com}
 \phone[mobile]{516-853-5663}
 \social[linkedin]{sri-krishnaa-ece-phd}
-\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+\extrainfo{Portfolio: \href{https://krishnaa423.github.io/personal-website/}{\texttt{krishnaa423.github.io/personal-website}}}
 
 \begin{document}
 \makecvtitle
 
 \section{Summary}
-\cvitem{}{GPU-focused computational scientist and software engineer for performance-oriented systems and HPC roles. Builds Python and C++ code with CUDA, ROCm, MPI, and OpenMP, with experience in multi-GPU parallelization, collective communication, distributed debugging, and strong and weak scaling analysis on national-lab supercomputers.}
+\cvitem{}{GPU-focused computational scientist and software engineer for performance-oriented systems and HPC roles. Builds Python and C++ code with CUDA, ROCm/HIP, MPI, and OpenMP; sharded JAX/PyTorch computational graphs across up to 800 Frontier GPUs and TB-scale datasets.}
 
 \section{Technical Skills}
-\cvitem{Programming}{Python, C, C++, CUDA, JavaScript, Bash, SQL}
-\cvitem{GPU / HPC}{CUDA, ROCm, cuBLAS, cuTENSOR, rocBLAS, rocFFT, MPI, OpenMP, collective communication, multi-GPU parallelization, PETSc, SLEPc}
+\cvitem{Programming}{Python, C, C++, CUDA, HIP, JAX, PyTorch, Bash}
+\cvitem{GPU / HPC}{CUDA, ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, MPI, OpenMP, collective communication, multi-GPU parallelization, PETSc, SLEPc}
 \cvitem{Platforms}{AMD MI250X, NVIDIA A100, Frontier, Perlmutter, Linux, CMake, Docker, Kubernetes}
-\cvitem{Debug / Perf}{TotalView, Linaro DDT, distributed debugging, strong scaling, weak scaling, hardware-aware optimization}
+\cvitem{Debug / Perf}{cuda-gdb, nvprof, TotalView, Linaro DDT, MPI/GPU distributed debugging, strong scaling, weak scaling, hardware-aware optimization}
 \cvitem{Machine Learning}{PyTorch, PyTorch Geometric, automatic differentiation, equivariant graph neural networks, scikit-learn}
 
 \section{Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Implemented INCITE-supported distributed scientific software in Python/C++ for LiF and double-perovskite first-principles workloads, using MPI, OpenMP, CUDA/ROCm, PETSc, and SLEPc on Frontier and Perlmutter.
+\item Implemented INCITE-supported distributed scientific software in Python/C++ for LiF and double-perovskite exciton-polaron workloads, using MPI, OpenMP, CUDA/ROCm/HIP, PETSc, SLEPc, and GPU linear-algebra libraries on Frontier and Perlmutter.
 \item Parallelized matrix and vector workloads across multiple GPUs, using collective communication and distributed linear-algebra workflows to scale simulations across clusters.
 \item Ported and optimized scientific-computing workloads for AMD MI250X and NVIDIA A100 GPU systems, translating many-body and excited-state physics methods into scalable GPU implementations.
 \item Built DeePH-style computational graphs and PyTorch Geometric equivariant models that delivered roughly 100x speedups for parts of the workflow by combining training with automatic differentiation to obtain additional quantities without separate expensive calculations.
-\item Ran strong- and weak-scaling studies to evaluate distributed performance and used TotalView, CUDA-aware MPI workflows, and Linaro DDT to debug multi-process and multi-GPU applications across heterogeneous compute environments.
+\item Sharded JAX/PyTorch computational graphs across up to 800 Frontier GPUs and TB-scale datasets; ran strong- and weak-scaling studies using cuda-gdb, nvprof, TotalView, CUDA-aware MPI workflows, and Linaro DDT to debug multi-process and multi-GPU applications.
 \item Packaged scientific software in Docker containers for reproducible deployment across local and HPC systems.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS research in 2024, 2025, and 2026, grounding GPU and HPC work in production research workflows.
 \end{itemize}}
