@@ -1,7 +1,55 @@
-\documentclass[10pt,letterpaper]{article}
-\input{../../shared/style.tex}
-\newif\ifcv
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\input{../../moderncv-tuning.tex}
+
+\usepackage[scale=0.81]{geometry}
+\nopagenumbers{}
+\setlength{\hintscolumnwidth}{2.25cm}
+
+\name{Krishnaa}{Vadivel}
+\title{Scientific ML | GPU Computing}
+\email{srikrishnaa.careers@gmail.com}
+\phone[mobile]{516-853-5663}
+\social[linkedin]{sri-krishnaa-ece-phd}
+\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+
 \begin{document}
-\ResumeHeader{Scientific Machine Learning | Computational Materials}
-\input{../../shared/ml.tex}
+\makecvtitle
+
+\section{Summary}
+\cvitem{}{PhD researcher and engineer with experience building machine-learning models and deploying them on high-performance computing systems for large-scale materials simulation. Experience spans PyTorch, transformers, agentic ML, GPU acceleration, and distributed compute on national supercomputing clusters.}
+
+\section{Experience}
+\cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
+\item Developed equivariant graph neural networks in PyTorch and PyTorch Geometric, similar to DeepH and MACE, to accelerate optical-properties calculations in material systems with automatic differentiation.
+\item Built distributed and accelerator-enabled ML software in Python and C++ using CUDA, ROCm, MPI, OpenMP, and HPC environments such as Frontier and Perlmutter.
+\item Applied machine learning models alongside first-principles materials simulations on supercomputing clusters, connecting model development with production scientific-computing workloads.
+\item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS research in 2024, 2025, and 2026, grounding ML work in real materials-science applications.
+\end{itemize}}
+\cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
+\item Built GPU-accelerated processing and visualization tools for large waveform datasets, providing practical experience with high-throughput data pipelines and performance-oriented engineering.
+\item Built database- and web-backed data-management tooling with ASP-style services and Microsoft SQL to collect, organize, and process large-scale well-tool datasets.
+\end{itemize}}
+
+\section{Selected Projects}
+\cvitem{Materials ML for Optical Properties}{Developed equivariant graph neural networks in PyTorch Geometric to accelerate optical-properties calculations and material-energy prediction.}
+\cvitem{Matrix-Multiply AI Accelerator}{Built a Verilog-based matrix-multiply accelerator project for AI-oriented datapath design and hardware-aware compute fundamentals.}
+\cvitem{Agentic Scientific RAG}{Built retrieval-driven tooling that reads documentation and research papers to generate structured inputs for computational science software.}
+\cvitem{Container Orchestration for First-Principles Computing}{Developed CUDA-ready and cross-environment containers for first-principles software stacks and published them to Docker Hub for portable scientific computing.}
+
+\section{Education}
+\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
+\cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{}
+
+\section{Technical Skills}
+\cvitem{ML}{PyTorch, PyTorch Geometric, scikit-learn, equivariant graph neural networks, transformers, automatic differentiation}
+\cvitem{Programming}{Python, C++, CUDA, JavaScript, Bash}
+\cvitem{Data / Compute}{NumPy, pandas, SciPy, distributed computing, CUDA, ROCm}
+\cvitem{Systems}{Linux, Docker, Docker Compose, Kubernetes, gcloud}
+\cvitem{Scientific}{PETSc, SLEPc, first-principles simulation, materials modeling, physics-informed ML}
+
 \end{document}

@@ -1,7 +1,63 @@
-\documentclass[10pt,letterpaper]{article}
-\input{../../shared/style.tex}
-\newif\ifcv
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\input{../../moderncv-tuning.tex}
+
+\usepackage[scale=0.81]{geometry}
+\nopagenumbers{}
+\setlength{\hintscolumnwidth}{2.25cm}
+
+\name{Krishnaa}{Vadivel}
+\title{Computational Physics | GPU/HPC}
+\email{srikrishnaa.careers@gmail.com}
+\phone[mobile]{516-853-5663}
+\social[linkedin]{sri-krishnaa-ece-phd}
+\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+
 \begin{document}
-\ResumeHeader{Computational Materials Physics | Scientific Computing}
-\input{../../shared/comp_physics.tex}
+\makecvtitle
+
+\section{Summary}
+\cvitem{}{Computational physics researcher building distributed scientific software and using machine learning to accelerate calculations for first-principles materials research. Experience spans Python/C++, CUDA/ROCm, MPI/OpenMP, Linux-based HPC environments, and Docker containers for packing applications across environments.}
+
+\section{Research Experience}
+\cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
+\item Implemented INCITE-supported first-principles workflows in Python/C++ with MPI, OpenMP, CUDA/ROCm, PETSc, and SLEPc on Frontier at OLCF and Perlmutter at LBNL.
+\item Formulated coherent-state and path-integral treatments of exciton-phonon dynamics for self-trapped excitons and exciton-polarons in LiF and lead-free double perovskites, connecting DFT, DFPT, and GW/BSE-style methods.
+\item Built DeePH-style computational graphs and trained PyTorch Geometric equivariant models with automatic differentiation to accelerate optical-property calculations.
+\item Packaged scientific applications in Docker containers for deployment across different computing environments and used distributed debuggers such as TotalView and Linaro DDT to track down bugs on HPC systems.
+\item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper on ultrafast self-trapped exciton formation in lead-free double halide perovskites and presented related APS research in 2024, 2025, and 2026.
+\end{itemize}}
+
+\section{Industry Experience}
+\cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
+\item Developed CUDA-based software for high-volume acoustic waveform processing, visualization, and field-tool diagnostics in geological well logging systems.
+\item Built full-stack server applications with C\#, ASP.NET, and Microsoft SQL Server for database design, real-time remote tool testing, and calibration of temperature and pressure sensors.
+\item Applied finite-element analysis with dolfinx for frequency analysis of steel pipes in well environments to support physics-driven engineering studies.
+\end{itemize}}
+\cventry{2018--2019}{Photonics Technical Writer}{FindLight}{}{}{\begin{itemize}%
+\item Wrote clear technical content on lasers, optics, and photonics devices for engineering audiences and product-focused readers.
+\end{itemize}}
+
+\section{Selected Projects}
+\cvitem{Exciton-Phonon HPC Research}{Implemented distributed first-principles calculations for LiF and lead-free double perovskites using CUDA/ROCm, MPI, OpenMP, PETSc, and SLEPc.}
+\cvitem{Equivariant Scientific ML}{Built DeePH-style computational graphs and PyTorch Geometric equivariant models with automatic differentiation for excitonic calculations.}
+\cvitem{Meep Ring Resonator FDTD}{Designed a nanophotonic ring-resonator band-pass filter in telecom bands using Meep-based FDTD simulation.}
+\cvitem{DOLFINx Finite-Element Analysis}{Built 2D DOLFINx/PETSc simulations for transient heat diffusion, Poisson potential around a circular cutout, and incompressible flow past an immersed cylinder, with PyVista and Matplotlib results.}
+
+\section{Education}
+\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
+\cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{}
+
+\section{Technical Skills}
+\cvitem{Programming}{Python, C, C++, CUDA, JavaScript, Bash, SQL, C\#}
+\cvitem{Scientific Computing}{MPI, OpenMP, PETSc, SLEPc, NumPy, SciPy, SymPy, matplotlib, dolfinx}
+\cvitem{GPU Libraries}{CUDA, ROCm, cuBLAS, cuTENSOR, rocBLAS, rocFFT, CUDA-aware MPI}
+\cvitem{Machine Learning}{PyTorch, PyTorch Geometric, scikit-learn, equivariant graph neural networks}
+\cvitem{Platforms}{Linux, macOS, Windows, Docker, Docker Compose, Kubernetes, gcloud, Frontier, Perlmutter}
+\cvitem{Domains}{First-principles materials modeling, many-body theory, distributed computing, computational physics, numerical PDEs}
+
 \end{document}

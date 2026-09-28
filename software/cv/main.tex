@@ -1,8 +1,77 @@
-\documentclass[10pt,letterpaper]{article}
-\input{../../shared/style.tex}
-\newif\ifcv
-\cvtrue
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\input{../../moderncv-tuning.tex}
+
+\usepackage[scale=0.84]{geometry}
+\nopagenumbers{}
+\setlength{\hintscolumnwidth}{2.35cm}
+
+\name{Krishnaa}{Vadivel}
+\title{Scientific Software | GPU Systems}
+\email{srikrishnaa.careers@gmail.com}
+\phone[mobile]{516-853-5663}
+\social[linkedin]{sri-krishnaa-ece-phd}
+\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+
 \begin{document}
-\ResumeHeader{Scientific Software Engineer | GPU and Systems}
-\input{../../shared/software.tex}
+\makecvtitle
+
+\section{Profile}
+\cvitem{}{Software engineer and PhD researcher focused on machine learning, distributed computing, and numerical software. Strong background in Python and C++ development for simulation, automation, GPU acceleration, data systems, and infrastructure spanning research and production-adjacent environments.}
+
+\section{Research Experience}
+\cventry{2021--present}{Research Assistant / PhD Researcher}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
+\item Developed graph neural networks and automatic-differentiation models in Python to predict material properties including optical emission spectra.
+\item Developed scientific software for first-principles and many-body simulation, combining Python and C++ with MPI, OpenMP, PETSc, SLEPc, CUDA, ROCm, and CMake.
+\item Built distributed and accelerator-enabled applications for HPC environments including Frontier, Frontera, and Perlmutter, with experience spanning NVIDIA and AMD GPU systems on national-lab clusters.
+\item Worked across debugging, compiler-aware builds, documentation, and reproducible computational software for research-scale simulations.
+\item Extended into ML-assisted and retrieval-driven automation with LangChain, OpenAI API models, and local Ollama models for coding and research setup.
+\item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS talks in 2024, 2025, and 2026 on self-trapped exciton formation and related first-principles work.
+\end{itemize}}
+
+\section{Professional Experience}
+\cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
+\item Built parallel applications with CUDA and OpenCL fallback for large acoustic waveform and sensor datasets used in engineering diagnostics and field-tool analysis.
+\item Developed full-stack server applications with ASP.NET and Microsoft SQL Server for real-time control of company tool testing, data collection, and data processing.
+\item Developed C\# GUI applications for preparing customer inputs and interacting with deployed hardware systems.
+\item Worked close to embedded and instrumentation systems, giving practical experience with software operating alongside deployed hardware and field constraints.
+\end{itemize}}
+\cventry{2018--2019}{Photonics Technical Writer}{FindLight}{}{}{\begin{itemize}%
+\item Produced technical content for optics and photonics topics, demonstrating strong technical communication across specialized engineering subject matter.
+\end{itemize}}
+
+\section{Selected Projects}
+\cventry{}{Machine Learning Models for Material Properties}{}{}{}{\begin{itemize}%
+\item Developed PyTorch Geometric graph neural networks and automatic-differentiation models for molecular-property prediction and optical-properties calculations in material systems.
+\end{itemize}}
+\cventry{}{Agentic Coding and Scientific Workflow Generation}{}{}{}{\begin{itemize}%
+\item Developed LangChain-based retrieval-driven tooling using OpenAI API models and local Ollama models to read documentation and academic papers, then generate structured starter inputs and workflow artifacts.
+\end{itemize}}
+\cventry{}{Container Orchestration for First-Principles Computing}{}{}{}{\begin{itemize}%
+\item Developed CUDA-ready and cross-environment containers for first-principles software stacks and published them to Docker Hub for portable scientific computing.
+\end{itemize}}
+\cventry{}{Matrix-Multiply AI Accelerator}{}{}{}{\begin{itemize}%
+\item Developed a Verilog-based matrix-multiply accelerator project for AI-oriented compute pipelines and hardware-software performance exploration.
+\end{itemize}}
+
+\section{Education}
+\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{Ongoing work combining scientific computing, high-performance workflows, and computational materials research.}
+\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
+\cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{}
+
+\section{Selected Coursework}
+\cvitem{Computing Foundations}{Theoretical Computer Science; Probabilistic Machine Learning}
+\cvitem{Scientific Foundations}{Graduate Quantum Mechanics; Solid State Physics; Many-Body Quantum Physics}
+\cvitem{Engineering Foundations}{Signals and systems, embedded systems, semiconductor physics, and numerical/scientific computing practice}
+
+\section{Technical Skills}
+\cvitem{Languages}{Python, C, C++, JavaScript, Bash, PowerShell, SQL}
+\cvitem{Scientific Computing}{MPI, OpenMP, PETSc, SLEPc, mpi4py, petsc4py, slepc4py, NumPy, pandas, SciPy, SymPy, matplotlib}
+\cvitem{Systems}{Linux command line, CMake, Docker, Docker Compose, Kubernetes, gcloud}
+\cvitem{Platforms}{CUDA, ROCm, Frontier, Frontera, Perlmutter}
+\cvitem{ML / Automation}{PyTorch, PyTorch Geometric, scikit-learn, LangChain, OpenAI API, Ollama, graph neural networks, transformers, agentic automation}
+
 \end{document}

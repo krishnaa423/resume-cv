@@ -1,8 +1,83 @@
-\documentclass[10pt,letterpaper]{article}
-\input{../../shared/style.tex}
-\newif\ifcv
-\cvtrue
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\input{../../moderncv-tuning.tex}
+
+\usepackage[scale=0.84]{geometry}
+\nopagenumbers{}
+\setlength{\hintscolumnwidth}{2.35cm}
+
+\name{Krishnaa}{Vadivel}
+\title{Semiconductor Simulation | Photonics}
+\email{srikrishnaa.careers@gmail.com}
+\phone[mobile]{516-853-5663}
+\social[linkedin]{sri-krishnaa-ece-phd}
+\extrainfo{\href{https://krishnaa423.github.io/personal-website/}{Website} \textbar{} \href{https://github.com/krishnaa423}{GitHub: krishnaa423} \textbar{} \href{https://leetcode.com/u/krishnaa42342}{LeetCode: krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{Docker Hub: krishnaa42342}}
+
 \begin{document}
-\ResumeHeader{Electrical Engineering | Computational Materials}
-\input{../../shared/ee.tex}
+\makecvtitle
+
+\section{Profile}
+\cvitem{}{Electrical engineering PhD researcher with broad preparation across thin-film fabrication, semiconductor physics, integrated photonics, device simulation, and scientific software. Combines cleanroom and characterization experience with light-matter modeling, distributed HPC software, and machine learning for semiconductor and photonic systems.}
+
+\section{Research Experience}
+\cventry{2021--present}{Research Assistant / PhD Researcher}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
+\item Developed GaN-based power-electronics devices in cleanroom and MOCVD environments during the early PhD, including fabrication-oriented process work, selective-area etching techniques, and materials development.
+\item Characterized semiconductor materials with SEM, cathodoluminescence, and Raman spectroscopy, connecting fabrication outcomes to optical and structural behavior.
+\item Built simulation tools for VCSEL emission and coupled photon, phonon, and electron interactions in semiconductor and photonics problems.
+\item Developed distributed HPC software for exciton-polaron and light-matter interaction modeling using first-principles methods, quantum many-body theory, MPI, OpenMP, CUDA, ROCm, PETSc, and SLEPc.
+\item Used agentic ML and retrieval-based tooling to generate first-principles software inputs from journal literature and technical documentation.
+\item Maintained strong continuity between theory and engineering practice through coursework and self-developed notes in electromagnetism, signals/systems, semiconductor transport, optics, and device equations.
+\item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented related APS work in 2024, 2025, and 2026 on self-trapped excitons and excited-state materials phenomena.
+\end{itemize}}
+
+\section{Professional Experience}
+\cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
+\item Parallelized CUDA-based software for analysis and visualization of acoustic and nuclear well-tool data used in engineering diagnostics and field interpretation.
+\item Applied dolfinx-based finite-element analysis to frequency studies of steel pipes in well environments to support physics-driven engineering analysis.
+\item Contributed instrumentation-oriented engineering around deployed well tools, connecting field data, sensing systems, and numerical analysis.
+\end{itemize}}
+\cventry{2018--2019}{Photonics Technical Writer}{FindLight}{}{}{\begin{itemize}%
+\item Produced technical articles on lasers, photonics components, optical systems, and engineering applications for a specialized industrial audience.
+\end{itemize}}
+
+\section{Selected Projects}
+\cventry{}{Integrated Photonics Band-Pass Filter}{}{}{}{\begin{itemize}%
+\item Designed a Meep-based integrated photonics band-pass filter, then fabricated and tested the device with an erbium-doped fiber laser setup.
+\end{itemize}}
+\cventry{}{Semiconductor Device Simulation}{}{}{}{\begin{itemize}%
+\item Developed numerical treatments of Poisson, drift-diffusion, and pn-junction-style device equations to connect semiconductor theory with engineering-oriented simulation.
+\end{itemize}}
+\cventry{}{DOLFINx Finite-Element Analysis}{}{}{}{\begin{itemize}%
+\item Built 2D DOLFINx/PETSc simulations for transient heat diffusion, Poisson potential around a circular cutout, and incompressible flow past an immersed cylinder, with PyVista and Matplotlib results.
+\end{itemize}}
+\cventry{}{VCSEL Light-Matter Modeling}{}{}{}{\begin{itemize}%
+\item Built simulation tools for VCSEL emission and coupled photon, phonon, and electron interactions in semiconductor systems.
+\end{itemize}}
+\cventry{}{Equivariant Neural Networks for Materials and Optics}{}{}{}{\begin{itemize}%
+\item Developed PyTorch Geometric equivariant neural networks for material energy prediction and optical-property prediction.
+\end{itemize}}
+
+\section{Education}
+\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{Ongoing research spanning computational materials, semiconductor-relevant modeling, and scientific software.}
+\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{Included work in stochastic computing, semiconductor/device topics, and advanced EE design.}
+\cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{Included strong preparation in embedded systems, robotics, controls, and hardware-software integration.}
+
+\section{Selected Coursework}
+\cvitem{Semiconductors}{Semiconductor Physics; Thin Film Science; drift-diffusion and device modeling foundations}
+\cvitem{Photonics}{Lasers and Optoelectronics; Integrated Photonics}
+\cvitem{Circuits and VLSI}{VLSI Design; Analog VLSI Design; stochastic-computing-related design work}
+\cvitem{Systems}{Mathematics of Signals and Systems; Advanced Embedded Systems}
+\cvitem{Foundations}{Graduate Quantum Mechanics; Solid State Physics; Many-Body Quantum Physics}
+
+\section{Technical Skills}
+\cvitem{Languages}{Python, C, C++, CUDA, JavaScript, Bash, PowerShell}
+\cvitem{Fabrication / Characterization}{Cleanroom processing, MOCVD, SEM, cathodoluminescence, Raman spectroscopy, laser-bench optical testing}
+\cvitem{Simulation}{Semiconductor device modeling, FDTD photonics simulation, finite-element analysis, first-principles modeling, quantum many-body modeling}
+\cvitem{Machine Learning}{PyTorch, PyTorch Geometric, equivariant graph neural networks, materials- and optical-property prediction, agentic input generation}
+\cvitem{Scientific Computing}{MPI, OpenMP, CUDA, ROCm, PETSc, SLEPc, NumPy, pandas, SciPy, SymPy, matplotlib}
+\cvitem{Software / Platforms}{Python, C, C++, C\#, ASP.NET, Microsoft SQL Server, Linux command line, Docker, Docker Compose, Kubernetes, gcloud, Frontier, Frontera, Perlmutter}
+
 \end{document}
