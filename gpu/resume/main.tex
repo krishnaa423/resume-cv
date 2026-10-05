@@ -2,8 +2,9 @@
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
+\resumecompact
 
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.25cm}
 
@@ -16,6 +17,7 @@
 
 \begin{document}
 \makecvtitle
+\enlargethispage{4\baselineskip}
 
 \section{Summary}
 \cvitem{}{GPU-focused computational scientist and software engineer for performance-oriented systems and HPC roles. Builds Python and C++ code with CUDA, ROCm/HIP, MPI, and OpenMP; sharded JAX/PyTorch computational graphs across up to 800 Frontier GPUs and TB-scale datasets.}
@@ -23,7 +25,7 @@
 \section{Technical Skills}
 \cvitem{Programming}{Python, C, C++, CUDA, HIP, JAX, PyTorch, Bash}
 \cvitem{GPU / HPC}{CUDA, ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, MPI, OpenMP, collective communication, multi-GPU parallelization, PETSc, SLEPc}
-\cvitem{Platforms}{AMD MI250X, NVIDIA A100, Frontier, Perlmutter, Linux, CMake, Docker, Kubernetes}
+\cvitem{Platforms}{OLCF Frontier (AMD MI250X), NERSC Perlmutter (NVIDIA A100), ALCF Aurora (Intel GPUs), Linux, CMake, Docker, Kubernetes}
 \cvitem{Debug / Perf}{cuda-gdb, nvprof, TotalView, Linaro DDT, MPI/GPU distributed debugging, strong scaling, weak scaling, hardware-aware optimization}
 \cvitem{Machine Learning}{PyTorch, PyTorch Geometric, automatic differentiation, equivariant graph neural networks, scikit-learn}
 
@@ -31,7 +33,7 @@
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
 \item Implemented INCITE-supported distributed scientific software in Python/C++ for LiF and double-perovskite exciton-polaron workloads, using MPI, OpenMP, CUDA/ROCm/HIP, PETSc, SLEPc, and GPU linear-algebra libraries on Frontier and Perlmutter.
 \item Parallelized matrix and vector workloads across multiple GPUs, using collective communication and distributed linear-algebra workflows to scale simulations across clusters.
-\item Ported and optimized scientific-computing workloads for AMD MI250X and NVIDIA A100 GPU systems, translating many-body and excited-state physics methods into scalable GPU implementations.
+\item Ported and debugged scientific workloads across OLCF Frontier (AMD MI250X), NERSC Perlmutter (NVIDIA A100), and ALCF Aurora (Intel GPU) environments, translating many-body and excited-state methods into scalable implementations.
 \item Built DeePH-style computational graphs and PyTorch Geometric equivariant models that delivered roughly 100x speedups for parts of the workflow by combining training with automatic differentiation to obtain additional quantities without separate expensive calculations.
 \item Sharded JAX/PyTorch computational graphs across up to 800 Frontier GPUs and TB-scale datasets; ran strong- and weak-scaling studies using cuda-gdb, nvprof, TotalView, CUDA-aware MPI workflows, and Linaro DDT to debug multi-process and multi-GPU applications.
 \item Packaged scientific software in Docker containers for reproducible deployment across local and HPC systems.
@@ -47,7 +49,7 @@
 \end{itemize}}
 
 \section{Selected Projects}
-\cvitem{Multi-GPU Exciton-Phonon Simulation}{Developed distributed first-principles calculations with CUDA, ROCm, MPI, and OpenMP, including multi-GPU matrix and vector parallelization on leadership-class GPU clusters.}
+\cvitem{Multi-GPU Exciton-Phonon Simulation}{Implemented Quantum ESPRESSO and post-DFT many-body workflows for LiF and double-perovskite exciton-polarons; ran CUDA/ROCm, MPI, and OpenMP matrix/vector parallelization on up to 800 GPUs and TB-scale data.}
 \cvitem{Scientific ML on GPU Systems}{Developed PyTorch Geometric equivariant models that produced roughly 100x workflow speedups by pairing training with automatic differentiation to recover additional quantities efficiently.}
 \cvitem{CUDA Containers for HPC Software}{Packaged scientific applications in CUDA-ready Docker environments for portable deployment across local and HPC systems.}
 \cvitem{Matrix-Multiply AI Accelerator}{Built a Verilog-based matrix-multiply accelerator project for AI-oriented datapath design and hardware-aware compute fundamentals.}

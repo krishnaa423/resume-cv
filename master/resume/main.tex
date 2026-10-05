@@ -2,8 +2,9 @@
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
+\resumecompact
 
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.25cm}
 
@@ -16,15 +17,16 @@
 
 \begin{document}
 \makecvtitle
+\enlargethispage{4\baselineskip}
 
 \section{Summary}
 \cvitem{}{Electrical engineering PhD researcher with experience spanning quantum and many-body theory, first-principles materials simulation, integrated photonics, scientific machine learning, embedded systems, and distributed computing. Builds Python/C++ software across CUDA/ROCm/HIP, JAX/PyTorch computational graphs, FPGA/MCU/FreeRTOS platforms, and leadership-class HPC environments.}
 
 \section{Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Developed machine-learning and automatic-differentiation models in Python for material-property prediction and optical-emission calculations.
+\item Developed e3nn/PyTorch Geometric equivariant graph neural networks and automatic-differentiation models in Python for material-property prediction and optical-emission calculations.
 \item Developed first-principles and quantum many-body simulation software in Python and C++ using MPI, OpenMP, PETSc, SLEPc, CUDA/ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, and CMake across leadership-class HPC systems.
-\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale datasets for materials and molecular simulations on Frontier, Frontera, Perlmutter, and related national-lab GPU clusters.
+\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale datasets for materials and molecular simulations on OLCF Frontier (AMD MI250X), NERSC Perlmutter (NVIDIA A100), and ALCF Aurora (Intel GPUs).
 \item Helped fabricate and characterize semiconductor materials during the early PhD, alongside simulation and modeling work tied to photonic and electronic materials.
 \item Built agentic AI pipelines for reading papers and software documentation, then generating structured inputs for first-principles simulation workflows.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and delivered APS presentations in 2024, 2025, and 2026 on self-trapped exciton and exciton-polaron research.
@@ -42,7 +44,8 @@
 
 \section{Selected Projects}
 \cvitem{Machine Learning Models for Material Properties}{Developed PyTorch Geometric graph neural networks and automatic-differentiation models to accelerate material-property and optical-emission calculations in molecular and condensed-matter systems.}
-\cvitem{Integrated Photonics Bandpass Filter}{Developed Meep FDTD simulations for a ring-resonator-based integrated-photonics bandpass filter that was later fabricated and tested with an erbium-doped fiber laser.}
+\cvitem{1550 nm SiN Bandpass Filter}{Designed a Meep FDTD integrated-photonics band-pass filter for 1550 nm; fabricated SiN waveguides and measured the filter response with an erbium-doped fiber laser.}
+\cvitem{Semiconductor / VLSI Design}{Simulated high-\(k\)-dielectric MOSFETs in Silvaco; designed a multi-layer-perceptron circuit and an analog VCO in Cadence.}
 \cvitem{DOLFINx Finite-Element Analysis}{Built 2D DOLFINx/PETSc simulations for transient heat diffusion, Poisson potential around a circular cutout, and incompressible flow past an immersed cylinder, with PyVista and Matplotlib results.}
 \cvitem{Container Orchestration for First-Principles Computing}{Developed CUDA-ready and cross-environment containers for first-principles software stacks and published them to Docker Hub for portable scientific computing.}
 \cvitem{Agentic AI for Scientific Workflows}{Built AI pipelines for reading documentation and journal papers, then generating structured inputs and starter artifacts for first-principles and simulation software.}

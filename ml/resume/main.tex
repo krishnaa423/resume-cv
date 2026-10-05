@@ -2,8 +2,9 @@
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
+\resumecompact
 
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.25cm}
 
@@ -16,13 +17,14 @@
 
 \begin{document}
 \makecvtitle
+\enlargethispage{4\baselineskip}
 
 \section{Summary}
-\cvitem{}{PhD researcher and engineer with experience building machine-learning models and deploying them on high-performance computing systems for large-scale materials simulation. Experience spans PyTorch, transformers, agentic ML, GPU acceleration, and distributed compute on national supercomputing clusters.}
+\cvitem{}{PhD researcher and engineer building e3nn/PyTorch Geometric equivariant models and JAX/PyTorch computational graphs for materials simulation. Experience spans automatic differentiation, GPU acceleration, distributed sharding, and national-scale HPC systems.}
 
 \section{Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Developed equivariant graph neural networks in PyTorch and PyTorch Geometric, similar to DeepH and MACE, to accelerate optical-properties calculations in material systems with automatic differentiation.
+\item Developed e3nn and PyTorch Geometric equivariant graph neural networks, DeePH-style computational graphs, and automatic-differentiation models to accelerate material-property and optical calculations.
 \item Built distributed and accelerator-enabled ML software in Python and C++ using JAX/PyTorch computational graphs, CUDA, ROCm/HIP, MPI, and OpenMP; sharded workloads across up to 800 Frontier GPUs and TB-scale datasets.
 \item Applied machine learning models alongside first-principles materials simulations on supercomputing clusters, connecting model development with production scientific-computing workloads.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS research in 2024, 2025, and 2026, grounding ML work in real materials-science applications.
@@ -33,8 +35,7 @@
 \end{itemize}}
 
 \section{Selected Projects}
-\cvitem{Materials ML for Optical Properties}{Developed equivariant graph neural networks in PyTorch Geometric to accelerate optical-properties calculations and material-energy prediction.}
-\cvitem{Matrix-Multiply AI Accelerator}{Built a Verilog-based matrix-multiply accelerator project for AI-oriented datapath design and hardware-aware compute fundamentals.}
+\cvitem{Materials ML for Optical Properties}{Developed e3nn/PyTorch Geometric equivariant graph neural networks and automatic-differentiation models for material energies and optical properties; integrated the models with 800-GPU, TB-scale workflows.}
 \cvitem{Agentic Scientific RAG}{Built retrieval-driven tooling that reads documentation and research papers to generate structured inputs for computational science software.}
 \cvitem{Container Orchestration for First-Principles Computing}{Developed CUDA-ready and cross-environment containers for first-principles software stacks and published them to Docker Hub for portable scientific computing.}
 
@@ -48,7 +49,7 @@
 \section{Technical Skills}
 \cvitem{ML}{PyTorch, PyTorch Geometric, scikit-learn, equivariant graph neural networks, transformers, automatic differentiation}
 \cvitem{Programming}{Python, C++, CUDA, HIP, JAX, PyTorch, Bash}
-\cvitem{Data / Compute}{NumPy, pandas, SciPy, JAX/PyTorch computational graphs, distributed sharding, CUDA, ROCm/HIP, TB-scale data}
+\cvitem{Data / Compute}{NumPy, pandas, SciPy, JAX/PyTorch graphs, distributed sharding, CUDA/ROCm/HIP, TB-scale data}
 \cvitem{Systems}{Linux, Docker, Docker Compose, Kubernetes, gcloud}
 \cvitem{Scientific}{PETSc, SLEPc, first-principles simulation, materials modeling, equivariant graph neural networks, physics-informed ML}
 

@@ -3,7 +3,7 @@
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
 
-\usepackage[scale=0.84]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.35cm}
 
@@ -29,9 +29,9 @@
 
 \section{Research Experience}
 \cventry{2021--present}{Research Assistant / PhD Researcher}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Implemented INCITE-supported distributed scientific software in Python/C++ with MPI, OpenMP, PETSc, SLEPc, CUDA/ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, and rocFFT for LiF and double-perovskite exciton-polaron workloads on Frontier, Perlmutter, and related national-lab systems.
+\item Implemented INCITE-supported Quantum ESPRESSO and post-DFT many-body workflows in Python/C++ with MPI, OpenMP, PETSc, SLEPc, CUDA/ROCm/HIP, cuBLAS, cuTENSOR, cuRAND, rocBLAS, and rocFFT for LiF and double-perovskite exciton-polarons.
 \item Parallelized matrix and vector workloads across multiple GPUs, using collective communication and distributed linear-algebra workflows to scale simulations across clusters.
-\item Ported and optimized computational workloads for AMD MI250X and NVIDIA A100 GPU systems using CUDA and ROCm, translating many-body and excited-state physics methods into scalable GPU implementations.
+\item Ported and debugged workloads across OLCF Frontier (AMD MI250X), NERSC Perlmutter (NVIDIA A100), and ALCF Aurora (Intel GPUs), translating many-body and excited-state methods into scalable GPU implementations.
 \item Developed many-body and field-theoretic formulations of coupled electron, exciton, and phonon systems, including coherent-state and path-integral approaches for time-dependent and self-localized states.
 \item Built DeePH-style computational graphs and PyTorch Geometric equivariant models to accelerate self-trapped-exciton calculations, achieving roughly 100x speedups in parts of the workflow through training and automatic differentiation.
 \item Sharded JAX/PyTorch computational graphs across up to 800 Frontier GPUs and TB-scale datasets; ran strong- and weak-scaling studies using cuda-gdb, nvprof, TotalView, CUDA-aware MPI workflows, Linaro DDT, Bash, and Linux command-line tools.

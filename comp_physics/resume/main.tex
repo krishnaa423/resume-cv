@@ -2,8 +2,9 @@
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
+\resumecompact
 
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.25cm}
 
@@ -16,16 +17,17 @@
 
 \begin{document}
 \makecvtitle
+\enlargethispage{4\baselineskip}
 
 \section{Summary}
 \cvitem{}{Computational physics researcher building distributed first-principles and scientific-ML workflows for materials research. Experience spans Python/C++, CUDA/ROCm/HIP, MPI/OpenMP, PETSc/SLEPc, JAX/PyTorch computational graphs, and leadership-class GPU clusters.}
 
 \section{Research Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Implemented INCITE-supported first-principles workflows in Python/C++ for LiF and double-perovskite exciton-polarons, using MPI, OpenMP, CUDA/ROCm/HIP, PETSc, and SLEPc on Frontier at OLCF and Perlmutter at LBNL.
+\item Implemented INCITE-supported Quantum ESPRESSO and post-DFT many-body workflows in Python/C++ for LiF and double-perovskite exciton-polarons, using MPI, OpenMP, CUDA/ROCm/HIP, PETSc, and SLEPc on OLCF Frontier and NERSC Perlmutter.
 \item Formulated coherent-state and path-integral treatments of exciton-phonon dynamics for self-trapped excitons and exciton-polarons in LiF and lead-free double perovskites, connecting DFT, DFPT, and GW/BSE-style methods.
-\item Built DeePH-style computational graphs and trained PyTorch Geometric equivariant models with automatic differentiation to accelerate optical-property calculations.
-\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale cluster datasets; used cuda-gdb, nvprof, TotalView, Linaro DDT, and CUDA-aware MPI workflows for distributed GPU debugging and performance analysis.
+\item Built DeePH-style computational graphs plus e3nn/PyTorch Geometric equivariant models with automatic differentiation to accelerate optical-property calculations.
+\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale datasets on Frontier (AMD MI250X), Perlmutter (NVIDIA A100), and Aurora (Intel GPUs); used cuda-gdb, nvprof, TotalView, Linaro DDT, and CUDA-aware MPI for distributed GPU debugging.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper on ultrafast self-trapped exciton formation in lead-free double halide perovskites and presented related APS research in 2024, 2025, and 2026.
 \end{itemize}}
 

@@ -2,8 +2,9 @@
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
+\resumecompact
 
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.25cm}
 
@@ -16,15 +17,17 @@
 
 \begin{document}
 \makecvtitle
+\enlargethispage{4\baselineskip}
 
 \section{Summary}
 \cvitem{}{Electrical engineering PhD researcher with Cornell and Yale ECE training across thin-film fabrication, semiconductor physics, integrated photonics, device simulation, and scientific computing. Experience spans cleanroom GaN device development, optical and materials characterization, light-matter modeling, and distributed HPC software for semiconductor and photonic systems.}
 
 \section{Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Developed GaN-based power-electronics devices in cleanroom and MOCVD environments during the early PhD, including selective-area etching techniques and materials characterization using SEM, cathodoluminescence, and Raman spectroscopy.
-\item Modeled VCSEL emission and related light-matter interactions involving coupled photon, phonon, and electron dynamics for semiconductor and photonics problems.
-\item Built distributed HPC software for exciton-polaron and light-matter interaction modeling using first-principles methods, quantum many-body theory, and accelerator-enabled scientific computing.
+\item Fabricated GaN power-electronics test structures: deposited GaN by MOCVD; defined contacts by e-beam evaporation and photolithography; patterned trenches; and used ion-implantation-based selective-area etching.
+\item Characterized thin films and fabricated structures using SEM, SEM cathodoluminescence, and Raman spectroscopy; connected process choices to optical and structural observations.
+\item Simulated high-\(k\)-dielectric MOSFETs in Silvaco; modeled VCSEL light--matter physics with coupled photon, phonon, and electron dynamics.
+\item Built distributed workflows for exciton-polarons and optical materials using Quantum ESPRESSO, post-DFT many-body perturbation methods, CUDA/ROCm, MPI, OpenMP, PETSc, and SLEPc.
 \item Used agentic ML tooling to generate first-principles software inputs from journal literature and technical documentation.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and delivered APS presentations in 2024, 2025, and 2026 on self-trapped exciton formation and related excited-state materials physics.
 \end{itemize}}
@@ -38,8 +41,9 @@
 \end{itemize}}
 
 \section{Selected Projects}
-\cvitem{Integrated Photonics Band-Pass Filter}{Designed a Meep-based integrated photonics band-pass filter, then fabricated and tested the device with an erbium-doped fiber laser setup.}
-\cvitem{Semiconductor Simulation}{Developed numerical modeling of semiconductor electrostatics, drift-diffusion transport, and pn-junction-style device behavior.}
+\cvitem{1550 nm SiN Band-Pass Filter}{Designed a Meep FDTD band-pass filter for the 1550 nm telecom band; fabricated SiN waveguides and measured the filter response with an erbium-doped fiber laser.}
+\cvitem{High-\(k\) MOSFET Simulation}{Used Silvaco device simulation to analyze MOSFET electrostatics and transport with high-\(k\) gate dielectrics.}
+\cvitem{Cadence VLSI / Analog Design}{Designed a multi-layer-perceptron circuit in Cadence and designed an analog voltage-controlled oscillator (VCO), applying transistor-level design and verification workflows.}
 \cvitem{DOLFINx Finite-Element Analysis}{Built 2D DOLFINx/PETSc simulations for transient heat diffusion, Poisson potential around a circular cutout, and incompressible flow past an immersed cylinder, with PyVista and Matplotlib results.}
 \cvitem{VCSEL Light-Matter Modeling}{Built simulation tools for VCSEL emission and coupled photon, phonon, and electron interactions in semiconductor systems.}
 \cvitem{Equivariant Scientific ML}{Developed PyTorch Geometric equivariant neural networks for material energy prediction and optical-property prediction.}
@@ -52,9 +56,9 @@
 \cventry{2013--2017}{BS, Electrical and Computer Engineering}{Cornell University}{}{}{}
 
 \section{Technical Skills}
-\cvitem{Fabrication / Characterization}{Cleanroom processing, MOCVD, SEM, cathodoluminescence, Raman spectroscopy, laser-bench optical testing}
+\cvitem{Fabrication / Characterization}{MOCVD GaN deposition, e-beam contacts, photolithography, trench patterning, ion implantation, selective-area etching, SEM, SEM-CL, Raman spectroscopy, laser-bench testing}
 \cvitem{Devices / Photonics}{Semiconductor physics, thin films, integrated photonics, lasers, VCSEL modeling, light-matter interaction}
-\cvitem{Simulation}{Semiconductor device simulation, FDTD, finite-element analysis, first-principles and quantum many-body modeling}
+\cvitem{Simulation / Design}{Silvaco, Cadence, Meep FDTD, DOLFINx, Quantum ESPRESSO, semiconductor device simulation, finite-element analysis, and post-DFT many-body perturbation theory}
 \cvitem{Machine Learning}{PyTorch, PyTorch Geometric, equivariant graph neural networks, optical- and materials-property prediction}
 \cvitem{Software / HPC}{Python, C, C++, CUDA, ROCm/HIP, MPI, OpenMP, PETSc, SLEPc, DOLFINx, Linux, Docker}
 \cvitem{GPU / FDTD}{cuBLAS, cuTENSOR, cuRAND, rocBLAS, rocFFT, Meep FDTD, cuda-gdb, nvprof}

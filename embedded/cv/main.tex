@@ -3,7 +3,7 @@
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
 
-\usepackage[scale=0.84]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.35cm}
 
@@ -26,8 +26,8 @@
 \item Implemented sensor-logging and control-side logic and firmware for field-deployed systems operating in instrumentation-heavy environments.
 \item Performed oscilloscope-based debugging, bench validation, and field testing to verify hardware-software integration and system behavior.
 \item Supported selective PCB updates in Altium and related board-level engineering tasks as system requirements evolved.
-\item Built companion Python/C++ host-side engineering tools using CUDA and OpenGL for waveform processing, visualization, and diagnostic workflows around the embedded stack.
-\item Contributed additional C\# and ASP.NET internal software for engineering-support workflows.
+\item Built CUDA/C++ and OpenGL/C\# host-side tools for waveform processing, visualization, and diagnostics around the embedded stack.
+\item Implemented ASP.NET and Microsoft SQL Server services for remote tool calibration, engineering support, and data collection.
 \end{itemize}}
 \cventry{2021--present}{Embedded Systems Teaching Assistant / PhD Researcher}{Yale University}{}{}{\begin{itemize}%
 \item Supported embedded systems laboratories and student projects involving firmware, hardware interfaces, debugging practices, and instrumentation workflows.
@@ -36,11 +36,11 @@
 \end{itemize}}
 
 \section{Selected Projects}
-\cventry{}{EMG-Driven Robotic Hand}{}{}{}{\begin{itemize}%
-\item Built an embedded robotic-hand project in undergraduate Cornell ECE work, integrating surface EMG sensing, analog filtering, PIC32 control logic, and servo actuation; related work was published in Circuit Cellar.
+\cventry{}{EEG-Driven Robotic Hand}{}{}{}{\begin{itemize}%
+\item Built a PIC32-based robotic-hand controller driven by EEG sensor input, integrating biosignal acquisition, embedded control logic, and servo actuation.
 \end{itemize}}
-\cventry{}{Maze Mapping Robot with Wireless Control}{}{}{}{\begin{itemize}%
-\item Worked on a robotics project combining navigation logic, remote-station control, and wireless coordination in a course setting.
+\cventry{}{PIC32 / Quartus Maze-Mapping Robot}{}{}{}{\begin{itemize}%
+\item Built a PIC32 robot that mapped a maze and transmitted the map for remote visualization; used an FPGA programmed in Quartus to support mapping and display workflows.
 \end{itemize}}
 \cventry{}{Single-Cycle MIPS Processor}{}{}{}{\begin{itemize}%
 \item Implemented a small Verilog CPU and self-checking test bench to demonstrate digital design, datapath organization, and reproducible verification.
@@ -67,9 +67,9 @@
 
 \section{Technical Skills}
 \cvitem{Languages}{Embedded C, C++, Python, CUDA, Bash, JavaScript}
-\cvitem{Firmware / Hardware}{FreeRTOS, Verilog, Lattice FPGA, PIC32, dsPIC, ESP32, STM32, C8051, sensor logging, embedded control}
+\cvitem{Firmware / Hardware}{FreeRTOS, Verilog, Lattice FPGA, Quartus, PIC32, dsPIC, ESP32, STM32, C8051, sensor logging, embedded control}
 \cvitem{Interfaces}{SPI, I2C, UART, hardware-software integration workflows}
 \cvitem{Validation}{Oscilloscopes, bench instrumentation, field testing, board bring-up, Altium update support}
-\cvitem{Software}{Linux, CUDA, OpenGL, C\#, ASP.NET}
+\cvitem{Software / Data}{Linux, CUDA, OpenGL, C\#, ASP.NET, Microsoft SQL Server}
 
 \end{document}

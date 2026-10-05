@@ -3,7 +3,7 @@
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
 
-\usepackage[scale=0.84]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.35cm}
 
@@ -22,10 +22,10 @@
 
 \section{Research Experience}
 \cventry{2021--present}{Research Assistant / PhD Researcher}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
-\item Implemented INCITE-supported distributed scientific software in Python/C++ for LiF and double-perovskite exciton-polarons, using MPI, OpenMP, PETSc, SLEPc, CUDA/ROCm/HIP, and large linear-algebra workflows on national-lab HPC systems.
+\item Implemented INCITE-supported Quantum ESPRESSO and post-DFT many-body workflows in Python/C++ for LiF and double-perovskite exciton-polarons, using MPI, OpenMP, PETSc, SLEPc, CUDA/ROCm/HIP, and large linear-algebra workflows.
 \item Developed many-body and field-theoretic formulations of coupled electron, exciton, and phonon systems, including coherent-state and path-integral approaches for time-dependent and self-localized states.
-\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale datasets, with experience running CUDA/ROCm/HIP workflows on Frontier at OLCF, Perlmutter at LBNL, and other leadership-class clusters.
-\item Built DeePH-style computational graphs and PyTorch Geometric equivariant models with automatic differentiation to accelerate self-trapped-exciton calculations in LiF and lead-free double perovskites.
+\item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale datasets on OLCF Frontier (AMD MI250X), NERSC Perlmutter (NVIDIA A100), and ALCF Aurora (Intel GPUs).
+\item Built DeePH-style computational graphs plus e3nn/PyTorch Geometric equivariant models with automatic differentiation to accelerate self-trapped-exciton calculations in LiF and lead-free double perovskites.
 \item Packaged scientific applications in Docker containers and used cuda-gdb, nvprof, TotalView, Linaro DDT, CUDA-aware MPI workflows, Bash, and Linux command-line tools to debug distributed multi-process and multi-GPU applications.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS talks in 2024, 2025, and 2026 on self-trapped exciton formation and related excited-state materials physics.
 \end{itemize}}

@@ -2,8 +2,9 @@
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \input{../../moderncv-tuning.tex}
+\resumecompact
 
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.87]{geometry}
 \nopagenumbers{}
 \setlength{\hintscolumnwidth}{2.25cm}
 
@@ -16,6 +17,7 @@
 
 \begin{document}
 \makecvtitle
+\enlargethispage{4\baselineskip}
 
 \section{Summary}
 \cvitem{}{Software engineer and Yale PhD researcher building numerical, GPU-accelerated, and distributed applications in Python and C++. Experience spans CUDA/ROCm/HIP, JAX/PyTorch computational graphs, HPC systems, Linux development, and systematic gdb-based debugging.}
@@ -23,14 +25,14 @@
 \section{Experience}
 \cventry{2021--present}{PhD Research Assistant}{Yale University, Electrical Engineering}{}{}{\begin{itemize}%
 \item Developed graph neural networks and automatic-differentiation models in Python to predict material properties including optical emission spectra.
-\item Developed Python and C++ software for first-principles and many-body simulation using MPI, OpenMP, PETSc, SLEPc, CUDA, ROCm, and CMake across leadership-class HPC systems.
+\item Developed Python and C++ software for Quantum ESPRESSO and post-DFT many-body simulation using MPI, OpenMP, PETSc, SLEPc, CUDA, ROCm/HIP, and CMake across leadership-class HPC systems.
 \item Sharded JAX/PyTorch computational-graph workloads across up to 800 Frontier GPUs and TB-scale datasets on national-lab GPU clusters including Frontier, Frontera, and Perlmutter.
 \item Used gdb for stack, frame, and memory inspection alongside cuda-gdb, nvprof, TotalView, and Linaro DDT for MPI/GPU distributed debugging and performance analysis.
 \item Co-authored a 2025 \textit{Journal of the American Chemical Society} paper and presented APS talks in 2024, 2025, and 2026, demonstrating research output alongside production-style software work.
 \end{itemize}}
 \cventry{2019--2021}{Software and Embedded Systems Engineer}{Probe Technologies Inc. / Weatherford Wireline Services}{}{}{\begin{itemize}%
 \item Built parallel applications with CUDA and OpenCL fallback for large sensor-data and waveform processing, diagnostic analytics, and field-data visualization.
-\item Developed C\# and ASP.NET applications for real-time control of company tool testing, data collection, and data processing.
+\item Developed C\#, ASP.NET, and Microsoft SQL Server applications for remote tool testing, calibration, data collection, and processing; used gdb to inspect stacks, frames, and memory during software debugging.
 \item Developed C\# GUI applications for preparing customer inputs and interacting with deployed hardware systems.
 \end{itemize}}
 \cventry{2018--2019}{Photonics Technical Writer}{FindLight}{}{}{\begin{itemize}%
